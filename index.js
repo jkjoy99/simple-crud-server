@@ -59,7 +59,7 @@ async function run() {
       const updatedUser = {
         $set: {
           name: user.name,
-          email: user.email
+          email: user.email  
         },
       };
       const result = await usersCollection.updateOne(filter, updatedUser, options);
